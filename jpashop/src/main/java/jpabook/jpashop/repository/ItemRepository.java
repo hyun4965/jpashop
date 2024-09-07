@@ -18,7 +18,7 @@ public class ItemRepository {
             em.merge(item); // 업데이트 같은 것 . 나중에 다시 설명할 것임.
         }
     }
-    public Item findById(final Long id) {
+    public Item findOne(final Long id) {
         return em.find(Item.class, id);
     }
     public List<Item> findAll() {
