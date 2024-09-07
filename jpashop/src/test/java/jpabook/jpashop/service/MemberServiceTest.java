@@ -14,8 +14,7 @@ import static org.junit.Assert.*;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-@Transactional
-
+@Transactional// test를 할때 DB에 남으면 안되고 반복해야해서 RollBack을 해줘야하기 때문에.
 public class MemberServiceTest {
 
     @Autowired
